@@ -20,7 +20,7 @@ repositories {
 kotlin {
     jvm()
     ios { binaries { framework { freeCompilerArgs += "-Xobjc-generics" } } }
-    iosSimulatorArm64()
+    iosSimulatorArm64 { binaries { framework { freeCompilerArgs += "-Xobjc-generics" } } }
     js {
         browser()
         nodejs()
